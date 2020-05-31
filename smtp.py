@@ -19,14 +19,14 @@ def send_message(address, port, login, password, addressee, message):
         sock = ssl.wrap_socket(sock)
         sock.settimeout(1)
         sock.connect((address, port))
-        send_command(sock, b'EHLO test')
-        send_command(sock, b'AUTH LOGIN')
-        send_command(sock, b64encode(login.encode()))
-        send_command(sock, b64encode(password.encode()))
-        send_command(sock, b'MAIL FROM: ' + login.encode())
-        send_command(sock, b'RCPT TO: ' + addressee.encode())
-        send_command(sock, b'DATA')
-        send_command(sock, with_dot.encode())
+        send_req(sock, b'EHLO test')
+        send_req(sock, b'AUTH LOGIN')
+        send_req(sock, b64encode(login.encode()))
+        send_req(sock, b64encode(password.encode()))
+        send_req(sock, b'MAIL FROM: ' + login.encode())
+        send_req(sock, b'RCPT TO: ' + addressee.encode())
+        send_req(sock, b'DATA')
+        send_req(sock, with_dot.encode())
         print('### Message has been sent to ' + addressee + ' !')
 
 
@@ -63,7 +63,7 @@ def prepare_attachments(attachments):
     return message_attachments
 
 
-def send_command(sock, command, buffer=1024):
+def send_req(sock, command, buffer=1024):
     sock.send(command + b'\n')
     return sock.recv(buffer).decode()
 
