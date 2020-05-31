@@ -3,7 +3,7 @@ Made by Roman Yaschenko MO-202
 
 <p>How to use?
 <p>1) Open config.txt;
-<p>2) Fill in: Login, Password, Addressee has to be separated by " ", Theme, Attachments has to be separated by ",", Text, Host and Port. See exampe on pic 1.
+<p>2) Fill in: Login, Password, Addressee has to be separated by " ", Theme, Attachments has to be separated by ",", Text, Host and Port. See exampe on pic 1. Be careful! App do not catch errors.
 
 <p>pic 1:
 
