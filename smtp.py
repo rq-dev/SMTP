@@ -3,6 +3,15 @@ import ssl
 from base64 import b64encode
 from configparser import ConfigParser
 
+#
+# # SMTP
+# Made by Roman Yaschenko MO-202#
+# How to use?
+# 1) Open config.txt;
+# 2) Fill in: Login, Password, Addressee has to be separated by " ", Theme,
+# Attachments has to be separated by ",", Text, Host and Port.
+# 3)Run: smtp.py. See result on pic 2.
+
 
 def send_message(address, port, login, password, addressee, message):
     with_dot = message + "\n."
