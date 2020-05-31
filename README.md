@@ -10,7 +10,7 @@
 
 ![Image alt](https://github.com/rq-dev/SMTP/blob/master/shot2.png)
 
-<p>3)Run: smtp.py. See result on pic 2.
+<p>3) Run: smtp.py. See result on pic 2.
 <p>
 pic 2:
 
