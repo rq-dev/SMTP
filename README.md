@@ -1,5 +1,5 @@
 # SMTP
-Made by Roman Yaschenko MO-202
+### Made by Roman Yaschenko MO-202
 
 <p>How to use?
 <p>1) Open config.txt;
