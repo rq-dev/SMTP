@@ -1,0 +1,15 @@
+[Sender]
+Login = **********@*****.********
+Password = ***********
+
+[Addressee]
+********@mail.ru uromkaq@mail.ru ********@mail.ru ********@mail.ru
+
+[Message]
+Theme = Letter Theme
+Attachments = shot1.png, shot2.png
+Text = some text
+
+[Server]
+Host = smtp.yandex.ru
+Port = 465
